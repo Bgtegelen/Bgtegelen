@@ -4,23 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-
-  
 <body>
+  
+  <h2>Enter the password to continue:</h2>
 
-  <h1>Login</h1>
-  <form>
-  <label for="username">Gebruikersnaam:</label>
-  <input type="text" id="username" name="username"><br><br>
+  <input type="password" id="passwordInput" placeholder="Enter password">
+  <button onclick="checkPassword()">Login</button>
 
-  <label for="password">Wachtwoord:</label>
-  <input type="password" id="password" name="password"><br><br>
+  <p id="message"></p>
 
-  <input type="submit" value="Inloggen">
-</form>
-  <form>
+  <script>
+    function checkPassword() {
+      const password = document.getElementById("passwordInput").value;
+      const message = document.getElementById("message");
 
-  </form>
+      if (password === "secret123") {
+        message.innerText = "Access granted ✅";
+        // Optional: redirect to another page
+        // window.location.href = "hidden-page.html";
+      } else {
+        message.innerText = "Wrong password ❌";
+      }
+    }
+  </script>
+
   
   <p></p>
 
