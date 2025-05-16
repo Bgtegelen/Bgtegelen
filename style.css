@@ -1,6 +1,13 @@
 body {
   background-color: #E4EEF7;
 }
+.titel {
+    font-size: 60px;
+  color: black;
+  font-family: 'Optima', sans-serif;
+}
+
+
 
 .wachtwoord {
   background-color: white;      
