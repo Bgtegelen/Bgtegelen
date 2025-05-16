@@ -18,13 +18,11 @@
       const password = document.getElementById("passwordInput").value;
       const message = document.getElementById("message");
 
-      if (password === "secret123") {
-        message.innerText = "Access granted ✅";
-        // Optional: redirect to another page
-        // window.location.href = "hidden-page.html";
-      } else {
-        message.innerText = "Wrong password ❌";
-      }
+ if (password === "secret123") {
+      window.location.href = "website.html"; // hier komt jouw hoofdpagina
+    } else {
+      document.getElementById("message").innerText = "Wrong password";
+    }
     }
   </script>
 
