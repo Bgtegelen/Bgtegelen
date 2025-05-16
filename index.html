@@ -6,7 +6,7 @@
 </head>
 <body>
   
-  <h2>Enter the password to continue:</h2>
+  <h2>Voer wachtwoord in:</h2>
 
   <input type="password" id="passwordInput" placeholder="Enter password">
   <button onclick="checkPassword()">Login</button>
@@ -18,10 +18,10 @@
       const password = document.getElementById("passwordInput").value;
       const message = document.getElementById("message");
 
- if (password === "secret123") {
-      window.location.href = "website.html"; // hier komt jouw hoofdpagina
+ if (password === "Bgtegelen") {
+      window.location.href = "website.html"; 
     } else {
-      document.getElementById("message").innerText = "Wrong password";
+      document.getElementById("message").innerText = "Fout wachtwoord";
     }
     }
   </script>
