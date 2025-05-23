@@ -1,69 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="Style-web.css">
-  <meta charset="UTF-8">
-  <title>BgTegelen</title>
-</head>
-  
-<body>
-<h1>Welcome to BgTegelen!</h1>
-<div class="product-card">
-    <div class="product-image-wrapper">
-        <a href="https://onlyfans.com/sofia-tegelen" target="_blank" class="product-link">
-            <img src="tenor.gif" class="product-image default" />
-            <img src="IMG_20250522_102627.jpg" class="product-image hover" />
-        </a>
-    </div>
-    <div class="product-info">
-        <div class="product-title">Donné Lothman</div>
-        <div class="product-price">$2999,99/month</div>
-    </div>
-</div>
-
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
     <meta charset="UTF-8">
-    <title>Producten</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>BgTegelen</title>
+    <link rel="stylesheet" href="Style-web.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .product-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .product-card {
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.2s;
+            cursor: pointer;
+            background-color: #fff;
+        }
+
+        .product-card:hover {
+            transform: scale(1.03);
+        }
+
+        .product-image-wrapper {
+            position: relative;
+            width: 100%;
+            height: 200px;
+        }
+
+        .product-image {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: opacity 0.3s ease;
+            top: 0;
+            left: 0;
+        }
+
+        .product-image.hover {
+            opacity: 0;
+        }
+
+        .product-card:hover .product-image.hover {
+            opacity: 1;
+        }
+
+        .product-card:hover .product-image.default {
+            opacity: 0;
+        }
+
+        .product-info {
+            padding: 15px;
+        }
+
+        .product-title {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            color: green;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+    </style>
 </head>
+
 <body>
+    <h1>Welcome to BgTegelen!</h1>
 
-<div class="product-container">
-
-    <!-- Eerste product -->
-    <div class="product-card">
-        <div class="product-image-wrapper">
-            <a href="https://onlyfans.com/sofia-tegelen" target="_blank" class="product-link">
-                <img src="tenor.gif" class="product-image default" />
-                <img src="IMG_20250522_102627.jpg" class="product-image hover" />
-            </a>
+    <div class="product-container">
+        <!-- Product 1 -->
+        <div class="product-card">
+            <div class="product-image-wrapper">
+                <a href="https://onlyfans.com/sofia-tegelen" target="_blank" class="product-link">
+                    <img src="tenor.gif" class="product-image default" />
+                    <img src="IMG_20250522_102627.jpg" class="product-image hover" />
+                </a>
+            </div>
+            <div class="product-info">
+                <div class="product-title">Donné Lothman</div>
+                <div class="product-price">$2999.99/month</div>
+            </div>
         </div>
-        <div class="product-info">
-            <div class="product-title">Sofia Tegelen</div>
-            <div class="product-price">$4.99/month</div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+            <div class="product-image-wrapper">
+                <a href="https://onlyfans.com/sofia-tegelen" target="_blank" class="product-link">
+                    <img src="tenor.gif" class="product-image default" />
+                    <img src="IMG_20250522_102627.jpg" class="product-image hover" />
+                </a>
+            </div>
+            <div class="product-info">
+                <div class="product-title">Sofia Tegelen</div>
+                <div class="product-price">$4.99/month</div>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <div class="product-image-wrapper">
+                <a href="https://example.com/steun-kinderen" target="_blank" class="product-link">
+                    <img src="kinderen_default.jpg" class="product-image default" />
+                    <img src="kinderen_hover.jpg" class="product-image hover" />
+                </a>
+            </div>
+            <div class="product-info">
+                <div class="product-title">Steun de arme kinderen</div>
+                <div class="product-price">$2.99/month</div>
+            </div>
         </div>
     </div>
-
-    <!-- Tweede product -->
-    <div class="product-card">
-        <div class="product-image-wrapper">
-            <a href="https://example.com/steun-kinderen" target="_blank" class="product-link">
-                <img src="kinderen_default.jpg" class="product-image default" />
-                <img src="kinderen_hover.jpg" class="product-image hover" />
-            </a>
-        </div>
-        <div class="product-info">
-            <div class="product-title">Steun de arme kinderen</div>
-            <div class="product-price">$2.99/month</div>
-        </div>
-    </div>
-
-</div>
 
 </body>
 </html>
