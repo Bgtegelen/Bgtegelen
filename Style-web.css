@@ -57,8 +57,9 @@
     font-size: 1.1em;
 }
 h1 {
-    text-align: center;
-    font-family: 'Dancing Script', cursive;
-    font-size: 3em;
-    color: #4B0082; /* Indigo color for style */
+  font-family: 'Great Vibes', cursive;
+  color: black;
+  font-size: 4em;
+  text-align: center;
+  margin-top: 1em;
 }
