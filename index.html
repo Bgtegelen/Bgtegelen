@@ -12,8 +12,8 @@
     }
 
     .password-wrapper input {
-      padding-right: 36px; /* space for the icon inside the input */
-      height: 36px;
+      padding-right: 36px;
+      height: 30px;
       font-size: 16px;
     }
 
@@ -63,13 +63,13 @@
 </div>
 
 <script>
-  const encoded = "Qmd0ZWdlbGVu"; // base64 for 'Bgtegelen'
+  const encoded = "Qmd0ZWdlbGVu"; 
 
   let isPasswordVisible = false;
 
   function checkPassword() {
     const input = document.getElementById("passwordInput").value;
-    const password = atob(encoded); // decode the base64 encoded password
+    const password = atob(encoded); 
     const message = document.getElementById("message");
 
     if (input === password) {
