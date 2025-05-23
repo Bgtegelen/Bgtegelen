@@ -63,16 +63,19 @@
 </div>
 
 <script>
+  const encoded = "Qmd0ZWdlbGVu"; // base64 for 'Bgtegelen'
+
   let isPasswordVisible = false;
 
   function checkPassword() {
-    const password = document.getElementById("passwordInput").value;
+    const input = document.getElementById("passwordInput").value;
+    const password = atob(encoded); // decode the base64 encoded password
     const message = document.getElementById("message");
 
-    if (password === "Bgtegelen") {
+    if (input === password) {
       window.location.href = "website.html"; 
     } else {
-      message.innerText = "Fout Wachtwoord ❌";
+      message.innerText = "Password incorrect";
     }
   }
 
